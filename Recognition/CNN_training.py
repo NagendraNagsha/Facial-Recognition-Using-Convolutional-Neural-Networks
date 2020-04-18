@@ -16,17 +16,6 @@ from tensorflow.keras.preprocessing.image import load_img,img_to_array
 from tensorflow.keras.applications.vgg16 import preprocess_input
 
 
-# Loading libraries for KNN Classifier
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.metrics import confusion_matrix, accuracy_score
-from sklearn.model_selection import cross_val_score
-from sklearn.metrics import accuracy_score
-from sklearn.neighbors import DistanceMetric
-
-
-#libraries to be imported for Detection
-import cv2
-from mtcnn import MTCNN
 
 
 
