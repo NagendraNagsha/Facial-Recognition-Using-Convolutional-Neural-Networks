@@ -1,3 +1,30 @@
+#importing libraries
+import os
+import glob
+import pickle
+import pandas as pd
+import numpy as np
+import tensorflow as tf
+from tensorflow import keras
+import tensorflow.keras.backend as k
+from keras.models import model_from_json
+from keras.models import load_model
+from tensorflow.keras.models import Sequential,Model
+from tensorflow.keras.layers import ZeroPadding2D,Convolution2D,MaxPooling2D
+from tensorflow.keras.layers import Dense,Dropout,Softmax,Flatten,Activation,BatchNormalization
+from tensorflow.keras.preprocessing.image import load_img,img_to_array
+from tensorflow.keras.applications.vgg16 import preprocess_input
+
+
+# Loading libraries for KNN Classifier
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.metrics import confusion_matrix, accuracy_score
+from sklearn.model_selection import cross_val_score
+from sklearn.metrics import accuracy_score
+from sklearn.neighbors import DistanceMetric
+
+
+
 #libraries to be imported for Detection
 import cv2
 from mtcnn import MTCNN
